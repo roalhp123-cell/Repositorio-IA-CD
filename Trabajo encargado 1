@@ -1,0 +1,20 @@
+#include <iostream>
+using namespace std;
+int main() 
+{
+    float a, b;
+    float mayor, menor;
+
+    cout << "Ingrese el primer numero: ";
+    cin >> a;
+    cout << "Ingrese el segundo numero: ";
+    cin >> b;
+
+    mayor = (a + b + abs(a - b)) / 2;
+    menor = (a + b - abs(a - b)) / 2;
+
+    cout << "El numero mayor es: " << mayor << endl;
+    cout << "El numero menor es: " << menor << endl;
+
+    return 0;
+}
